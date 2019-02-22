@@ -2,8 +2,8 @@ import glob
 import os
 import cv2
 
-files = glob.glob('OpenEXR/*.exr')
-savepath = 'OpenEXR_HDR_format/'
+files = glob.glob('exr_format/Boitard/*.exr')
+savepath = 'Boitard_HDR_format/'
 for file in files:
     hdr = cv2.imread(file,-1)
     filename,file_ext = os.path.splitext(file)
